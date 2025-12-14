@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Madhu Goud V • Contact</title>
+  <meta name="description" content="Contact page with email and LinkedIn." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Go to Home">
+      <div class="avatar" aria-hidden="true"></div>
+      <div>
+        <h1>Madhu Goud V</h1>
+        <p>SAP S/4HANA SD – Functional Consultant</p>
+      </div>
+    </a>
+
+    <nav class="nav" aria-label="Primary navigation">
+      <a data-nav href="index.html">Home</a>
+      <a data-nav href="projects.html">Projects</a>
+      <a data-nav href="development.html">Development</a>
+      <a data-nav href="reflections.html">Reflections</a>
+      <a data-nav href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button id="themeToggle" class="icon-btn" type="button" aria-label="Toggle theme">☀️</button>
+      <button id="hamburger" class="icon-btn hamburger" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+
+  <div id="mobileNav" class="mobile-nav" aria-label="Mobile navigation">
+    <a data-nav href="index.html">Home</a>
+    <a data-nav href="projects.html">Projects</a>
+    <a data-nav href="development.html">Development</a>
+    <a data-nav href="reflections.html">Reflections</a>
+    <a data-nav href="contact.html">Contact</a>
+  </div>
+</header>
+<main class="container">
+<div class="section-title">
+  <h2>Contact</h2>
+  <p>Get in touch.</p>
+</div>
+
+<section class="grid">
+  <article class="card" style="grid-column: span 12;">
+    <h3>Contact information</h3>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:madhugoud0718@gmail.com">madhugoud0718@gmail.com</a></li>
+      <li><strong>LinkedIn:</strong>
+        <a class="btn" href="https://www.linkedin.com/in/madhu-goud-70629a1b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" aria-label="Open Madhu Goud LinkedIn profile">Open LinkedIn ↗</a>
+      </li>
+      <li><strong>Location:</strong> New Zealand</li>
+    </ul>
+    <div class="btn-row">
+      <button id="copyEmail" class="btn primary" type="button" data-email="madhugoud0718@gmail.com">Copy email</button>
+      <a class="btn" href="index.html">Back to Home →</a>
+    </div>
+  </article>
+
+  <article class="card" style="grid-column: span 12;">
+    <h3>Send a message</h3>
+    <p class="helper">This form opens your email app (no data is stored on the site).</p>
+
+    <form id="contactForm" class="form" data-to="madhugoud0718@gmail.com">
+      <div>
+        <label for="name">Your name</label>
+        <input id="name" name="name" autocomplete="name" placeholder="e.g., Recruiter / Hiring Manager" required />
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message…" required></textarea>
+      </div>
+      <button class="btn primary" type="submit">Open email draft →</button>
+    </form>
+  </article>
+</section>
+</main>
+<footer class="container">
+  <div>© <span id="year"></span> Madhu Goud V • Built with HTML, CSS & JavaScript</div>
+  <div class="small">Tip: Use the ☀️/🌙 button to switch themes.</div>
+</footer>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
